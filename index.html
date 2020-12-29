@@ -14,6 +14,8 @@
         width: 150px;
         height: 350px;
         background-color: black;
+        margin-right: auto;
+        margin-left: auto;
       }
 
       .circle {
@@ -21,12 +23,53 @@
         height: 100px;
         border-radius: 50px;
         border: 0.5px solid white;
+        
       }
 
       /* 👇 اكتب الكود هنا */
 
+.red{
+  
+  background-color: black;
+}
+.yellow{
+  
+  background-color: black;
+}
+.green{
+  background-color: black;
+}
+.red:hover{
+  color: red;
+  transition: all 0.5s ease-in-out;
+}
+.yellow:hover{
+  color: yellow;
+  transition: all 0.5s ease-in-out;
+}
+.green:hover{
+  color: green;
+  transition: all 0.5s ease-in-out;
+}
+.one{
+  position:relative;
+  z-index: -1;
+}
+.two{
+  text-align: center;
+  padding-inline:center;
+}
+
       img {
         /* عدل على عرض الصورة */
+        width: 250px;
+      }
+      div{
+        margin-right: auto;
+        margin-left: auto;
+      }
+      p{
+        text-align: center;
       }
     </style>
   </head>
@@ -36,25 +79,33 @@
     <!--            30 px غير حجم الخط الى-             -->
     <!--   (inline styling) p تلميح: ستغير خصائص عنصر   -->
     <!----------------====================---------------->
-    <p>مرحباً، أنا تمرين CSS</p>
-
+    
+    <p style="color:orange;" style="font-size: 30px;">مرحباً، أنا تمرين CSS</p>
+  
     <!-------------------المطلوب الثاني------------------->
     <!--             اجعل عرض الصورة ٢٥٠ بكسل-          -->
     <!--     فوق CSS في img تلميح: ستغير خصائص عنصر     -->
     <!----------------====================---------------->
-    <img src="./car.png" alt="" />
-
+      <img src="./img/car.png" alt=""/>
     <!-------------------المطلوب الثالث------------------->
     <!--  غير لون خلفية الدوائر حتى يصبح شكل اشارة مرور -->
     <!--    بحيث عند المرور بمؤشر الماوس يتغير اللون    -->
     <!-- style تلميح: ستغير خصائص الكلاسات اللي فوق داخل -->
     <!----------------====================---------------->
     <div class="square">
-      <div class="circle 1"></div>
-      <div class="circle 2"></div>
-      <div class="circle 3"></div>
+      <div class="circle red">
+        <p>stop</p>
+      </div>
+      <div class="circle yellow">
+        <p>slow down</p>
+      </div>
+      <div class="circle green">
+        <p>go</p>
+      </div>
     </div>
-
+<div class="one">
+  <img src="./img/stop.png">
+</div>
     <!----------------====================---------------->
     <!--                     بونص                       -->
     <!-- ---------------------------------------------- -->
